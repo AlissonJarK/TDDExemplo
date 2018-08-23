@@ -9,36 +9,36 @@ namespace FooBaa.teste
         [TestMethod]
         public void Múltiplo3RetornaFoo()
         {
-            int número = 3;
+            int num = 3;
             ConversorFooBaa cfb = new ConversorFooBaa();
-            string result = cfb.Converter();
+            string result = cfb.Converter(num);
             Assert.AreEqual("Foo",result);
         }
 
         [TestMethod]
         public void Múltiplo5RetornaBaa()
         {
-            int número = 5;
+            int num = 5;
             ConversorFooBaa cfb = new ConversorFooBaa();
-            string result = cfb.Converter();
+            string result = cfb.Converter(num);
             Assert.AreEqual("Baa", result);
         }
 
         [TestMethod]
         public void Múltiplo3e5RetornaFooBaa()
         {
-            int número = 15;
+            int num = 15;
             ConversorFooBaa cfb = new ConversorFooBaa();
-            string result = cfb.Converter();
+            string result = cfb.Converter(num);
             Assert.AreEqual("FooBaa", result);
         }
 
         [TestMethod]
         public void MúltiploDeNenhumDosDoisRetornaNada()
         {
-            int número = 11;
+            int num = 11;
             ConversorFooBaa cfb = new ConversorFooBaa();
-            string result = cfb.Converter();
+            string result = cfb.Converter(num);
             Assert.AreEqual("", result);
         }
     }
